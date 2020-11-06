@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">动动体育</string>
+    
+    <string name="circle" translatable="false">圈子</string>
+    <string name="headlines" translatable="false">头条</string>
+    <string name="competition" translatable="false">竞赛</string>
+    <string name="personal" translatable="false">个人</string>
+</resources>

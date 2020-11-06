@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f5f5">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:background="@color/color_da7b7b">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/portrait"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:layout_below="@+id/portrait"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_12"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_8"
+        android:layout_below="@+id/rl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的评论"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_333333"
+            android:background="@drawable/personalframgnet_textview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的关注"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/personalframgnet_textview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应用评分"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/personalframgnet_textview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关于我们"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/personalframgnet_textview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="联系我们"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/personalframgnet_textview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置中心"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/personalframgnet_textview"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动动体育 V:1.0"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_cc0000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+</RelativeLayout>
