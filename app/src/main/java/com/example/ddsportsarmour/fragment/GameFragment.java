@@ -10,12 +10,17 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.ddsportsarmour.R;
+import com.example.ddsportsarmour.Tool.MyFragment;
 
-public class GameFragment extends Fragment {
-    @Nullable
+public class GameFragment extends MyFragment {
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.gamefragment_layout,container,false);
-        return view;
+    protected int ContentView() {
+        return R.layout.gamefragment_layout;
     }
+
+    @Override
+    protected void init(View view) {
+
+    }
+
 }

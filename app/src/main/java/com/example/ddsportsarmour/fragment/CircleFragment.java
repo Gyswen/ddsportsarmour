@@ -10,13 +10,17 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.ddsportsarmour.R;
+import com.example.ddsportsarmour.Tool.MyFragment;
 
-public class CircleFragment extends Fragment {
+public class CircleFragment extends MyFragment {
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.circlefragment_layout,container,false);
-        return view;
+    protected int ContentView() {
+        return R.layout.circlefragment_layout;
+    }
+
+    @Override
+    protected void init(View view) {
+
     }
 }

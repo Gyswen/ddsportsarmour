@@ -11,11 +11,13 @@ import androidx.fragment.app.Fragment;
 
 public abstract class MyFragment extends Fragment {
     protected abstract int ContentView();
+    protected abstract void init(View view);
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(ContentView(),container,false);
+        init(view);
         return view;
     }
 }
